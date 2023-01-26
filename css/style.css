@@ -1,0 +1,163 @@
+:root {
+  --primary-cyan: hsl(158, 36%, 37%);
+  --primary-dark-cyan: hsl(158, 47%, 13%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 15%);
+  --font-primary: 'Montserrat', sans-serif;
+  --font-accent: 'Fraunces', serif;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--neutral-gray-blue);
+  background: var(--primary-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;  
+}
+
+main {
+  max-width: 335px;
+  background: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+@media(min-width: 768px){
+  main {
+    max-width: 550px;
+    display: flex;
+  }
+}
+
+.col-left {
+  background-image: url(../assets/images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 230px;
+}
+
+@media(min-width: 768px){
+  .col-left {
+    background-image: url(../assets/images/image-product-desktop.jpg);
+    flex-basis: 50%;
+  }
+}
+
+.col-right {
+  padding: 1.5rem 1.25rem;
+}
+
+@media(min-width: 768px){
+  .col-right {
+    flex-basis: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-size: .75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: var(--font-accent);
+  color: var(--black);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.col-right > p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.col-right div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+.col-right div > p:nth-child(1) {
+  color: var(--primary-cyan);
+  font-size: 1.75rem;
+  font-family: var(--font-accent);
+  flex-basis: 130px;
+}
+
+.col-right div > p:nth-child(2) {
+  text-decoration: line-through;
+}
+
+button {
+  background: var(--primary-cyan);
+  border: 0;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem;
+}
+
+button,
+button a {
+  color: var(--white);
+}
+
+button a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-dark-cyan);
+}
+
+button::before {
+  content: url('../assets/images/icon-cart.svg');
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+footer {
+margin-top: 1.25rem;
+text-align: center;
+}
+
+@media(min-width: 768px) {
+  footer {
+    text-align: left;
+  }
+}
+
+.fm-attribution {
+  font-size: 11px;
+}
+
+.fm-attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
