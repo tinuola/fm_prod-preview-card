@@ -1,0 +1,35 @@
+:root {
+  --primary-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --font-primary: 'Montserrat', sans-serif;
+  --font-accent: 'Fraunces', serif;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 14px;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;  
+}
+
+.fm-attribution {
+  font-size: 11px;
+}
+
+.fm-attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
