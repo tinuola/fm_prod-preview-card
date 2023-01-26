@@ -4,6 +4,7 @@
   --neutral-dark-blue: hsl(212, 21%, 14%);
   --neutral-gray-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 15%);
   --font-primary: 'Montserrat', sans-serif;
   --font-accent: 'Fraunces', serif;
 }
@@ -12,6 +13,13 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  color: var(--neutral-gray-blue);
+  background: var(--primary-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sr-only {
@@ -24,6 +32,90 @@ body {
   overflow: hidden;
   padding: 0;
   position: absolute;  
+}
+
+main {
+  max-width: 335px;
+  background: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.col-left {
+  background-image: url(../assets/images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+
+@media(min-width: 769px){
+  .col-left {
+    background-image: url(../assets/images/image-product-desktop.jpg);
+  }
+}
+
+.col-right {
+  padding: 1.5rem 1.25rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-size: .75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-family: var(--font-accent);
+  color: var(--black);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.col-right > p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.col-right div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+.col-right div > p:nth-child(1) {
+  color: var(--primary-cyan);
+  font-size: 1.75rem;
+  font-family: var(--font-accent);
+  flex-basis: 130px;
+}
+
+.col-right div > p:nth-child(2) {
+  text-decoration: line-through;
+}
+
+button {
+  background: var(--primary-cyan);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-family: inherit;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem;
+}
+
+button::before {
+  content: url('../assets/images/icon-cart.svg');
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+footer {
+margin-top: 1rem;
+text-align: center;
 }
 
 .fm-attribution {
