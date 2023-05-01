@@ -12,37 +12,36 @@
 
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
   font-size: 14px;
   font-family: var(--font-primary);
   font-weight: 500;
   color: var(--neutral-gray-blue);
   background: var(--primary-cream);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   width: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute;  
+  position: absolute;
 }
 
 main {
   max-width: 335px;
+  max-height: 500px;
   background: var(--white);
   border-radius: 0.5rem;
   overflow: hidden;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   main {
     max-width: 550px;
     display: flex;
@@ -56,7 +55,7 @@ main {
   min-height: 230px;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .col-left {
     background-image: url(../assets/images/image-product-desktop.jpg);
     flex-basis: 50%;
@@ -67,7 +66,7 @@ main {
   padding: 1.5rem 1.25rem;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .col-right {
     flex-basis: 50%;
     padding-left: 1.5rem;
@@ -77,8 +76,8 @@ main {
 
 h2 {
   text-transform: uppercase;
-  letter-spacing: .3rem;
-  font-size: .75rem;
+  letter-spacing: 0.3rem;
+  font-size: 0.75rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -144,11 +143,11 @@ button::before {
 }
 
 footer {
-margin-top: 1.25rem;
-text-align: center;
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   footer {
     text-align: left;
   }
@@ -158,6 +157,6 @@ text-align: center;
   font-size: 11px;
 }
 
-.fm-attribution a { 
-  color: hsl(228, 45%, 44%); 
+.fm-attribution a {
+  color: hsl(228, 45%, 44%);
 }
