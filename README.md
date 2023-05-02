@@ -13,13 +13,9 @@ Solution to the _[Product Preview Card Component](https://www.frontendmentor.io/
 
 Live Site: [https://tinuola.github.io/fm_prod-preview-card/](https://tinuola.github.io/fm_prod-preview-card/)
 
-### Retrospective
-
--
-
 ### Enhancement(s)
 
--
+- Add animated effect to button's hover state
 
 ### Tools & Resources
 
