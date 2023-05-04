@@ -21,3 +21,5 @@ Live Site: [https://tinuola.github.io/fm_prod-preview-card/](https://tinuola.git
 
 - HTML, CSS, JavaScript
 - CSS Resets
+
+_Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
